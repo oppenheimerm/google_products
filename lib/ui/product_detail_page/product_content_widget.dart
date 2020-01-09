@@ -18,7 +18,13 @@ class ProductContentWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           SizedBox(height: screenHeight * 0.20,),
-          Image.asset(product.imageUrl, height:  screenHeight * 0.30,),
+          // Wrapped in an Hero widget for our here animation. See:
+          // LeftImageProductListing class Hero -> Image.asset
+          Hero(
+            tag: product.name,
+              child: Image.asset(product.imageUrl,
+                height:  screenHeight * 0.30,
+              )),
           Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -106,4 +112,6 @@ class ProductContentWidget extends StatelessWidget {
       ),
     );
   }
+
+
 }
