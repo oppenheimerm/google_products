@@ -26,6 +26,7 @@ final Product pixelStand = Product(
   name: "Pixel stand",
   description: "New Release",
   buttonText: "",
+  info: "Power up with the Google Assistant on Pixel Stand.",
   backgroundColour: Color(0xFFF9F9F9),
 );
 
@@ -34,6 +35,7 @@ final Product dayDreamView = Product(
   name: "DayDream View",
   description: "Premium",
   buttonText: "",
+  info: "no data",
   backgroundColour: Color(0xFFE0DDFF),
 );
 
@@ -42,6 +44,7 @@ final Product pixel = Product(
   name: "Pixel 3a",
   description: "Meet the Google Pixel 3a.",
   buttonText: "Learn more",
+  info: "no data",
   backgroundColour: Color(0xFFF5F5F5),
 );
 

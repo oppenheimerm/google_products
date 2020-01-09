@@ -9,7 +9,12 @@ class ProductDetailTopBar extends StatelessWidget {
       height: 56.0,
       child: Row(
         children: <Widget>[
-          Icon(Icons.arrow_back),
+          GestureDetector(
+            onTap: () {
+              Navigator.pop(context);
+            },
+              child: Icon(Icons.arrow_back)
+          ),
           /* Note the use of a spacer to even out the row */
           Spacer(),
           Icon(Icons.search, color: Colors.white,),
